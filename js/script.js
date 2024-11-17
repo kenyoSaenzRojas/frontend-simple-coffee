@@ -211,8 +211,8 @@ const API ="https://raw.githubusercontent.com/devchallenges-io/web-project-ideas
      //voto.innerText="()"
      voto.style.color='var(--skysilver)';
      voto.style.fontSize='16px';
-     voto.style.width='180px'
-     voto.style.fontWeight='500'
+     voto.style.width='180px';
+     voto.style.fontWeight='500';
     //  voto.style.marginLeft='5px';
     if (cafe.rating == null || cafe.votes == 0) {
         voto.textContent="No ratings"
