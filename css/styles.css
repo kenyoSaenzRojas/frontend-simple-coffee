@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root{
+    
+    --silver:#1B1D1F;
+    --black:#111315;
+    --skysilver:#6F757C;
+    --green:#BEE3CC;
+    --browm:#FEF7EE;
+    --yellow:#F6C768;
+    --red:#ED735D;
+    --fuente:"DM Sans", serif;
+
+}
+
+/* 
+
+*{
+ font-family:"DM Sans", serif;   
+}
+
+body{
+    font-family:"DM Sans", serif; 
+} */
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body{
+  
+    height:100%;
+    background-image: url('../imagenes/bg-cafe.jpg');
+    background-size: 100%;
+    background-position:initial;
+    background-repeat: no-repeat;
+    font-family: "DM Sans", serif;
+    font-size: 16px;
+    
+ }
+header{
+    height: 300px;
+    background-color:var(--silver);
+    width: 80%;
+    border-radius: 20px 20px 0 0;
+    margin: auto;
+    /* margin: 0px auto 0px auto; */
+    padding-top: 100px ;
+    
+    position: relative;
+    top: 160px;
+    background-image: url(../imagenes/vector.svg);
+    background-repeat: no-repeat;
+    background-position: 80% 20%;
+   
+} 
+#cafecitos{
+    background-color: var(--silver);
+    width: 80%;
+    height: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    row-gap: 5px;
+    justify-content: center;
+    padding: 2em 0;
+    /* margin-bottom: 10px; */
+    position: relative;
+    top:160px;
+    border-radius: 0 0 20px 20px ; 
+}
+
+.boton1{
+    font-family: "DM Sans", serif;
+    
+}
+.boton2{
+    font-family: "DM Sans", serif;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+
+}
+.posicion{
+    position:relative;
+    top: -200px;
+    left: -125px;
+    color: black;
+    background-color: #F6C768;
+    padding: 5px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    color: var(--black);
+    font-size: 10px;
+    
+   
+}
+.imagenes{
+    position: absolute;
+}
+.divposicion{
+    width: 260px;
+    height: 280px;
+}
+@media screen and (width >= 1280px)
+{
+    .contenedor{
+        height: 900px;
+    }
+    #cafecitos{
+        width: 60%;
+        height: 650px;
+    }
+    header{
+        width: 60%;
+    }
+    div.posicion{
+        width: 260px;
+        height: 280px;
+    }
+}
+@media (max-width : 1280px){
+    .contenedor{
+        height: 900px;
+    }
+    #cafecitos{
+        height: 650px;
+    }
+    div.posicion{
+        width: 260px;
+        height: 280px;
+    }
+}
+@media (max-width: 1125px){
+    .contenedor{
+        height: 1100px;
+    }
+    #cafecitos{
+        height: 900px;
+    }
+}
+@media (max-width: 640px){
+    .contenedor{
+        height: 2000px;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 0; 
+    }
+    #cafecitos{
+        height: 1800px;
+    }
+    body{
+        background-size: 100% 11%;
+  
+    }
+    header{
+        height: 350px;
+        margin-top: 0px;
+        width: 64%;
+        
+    }
+}
